@@ -1,0 +1,267 @@
+@import url(../fonts/Varela+Round.css);
+
+@font-face 
+{
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(../fonts/Monoton.woff) format('woff');
+}
+ 
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Iceland'), local('Iceland-Regular'), url(../fonts/Iceland.woff) format('woff');
+}
+ 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(../fonts/Pacifico.woff) format('woff');
+}
+ 
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Audiowide'), local('Audiowide-Regular'), url(../fonts/Audiowide.woff) format('woff');
+}
+ 
+@font-face {
+  font-family: 'Vampiro One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vampiro One'), local('VampiroOne-Regular'), url(../fonts/Vampiro-One.woff) format('woff');
+}
+ 
+body{
+  background-color: #000;
+}
+/*Borde*/
+.container
+{
+  border: 5px solid grey; 
+  border-radius: 5%;
+}
+ 
+/*Efectos de neon*/
+p
+{
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+}
+ 
+a
+{
+  text-decoration: none;
+  transition: all 0.5s;
+}
+ 
+
+.texto1 a /* Falta la a */
+{
+  color: #FF1177;
+  font-family: Monoton;
+}
+
+.texto1 a:hover
+{
+  animation: 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+}
+
+
+.texto2 a 
+{
+  color: #228DFF;
+  font-family: Iceland;
+}
+
+.texto2 a:hover
+{
+  animation:1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+}
+
+.texto3 a 
+{
+  color: #FFFC33;
+  font-family: Audiowide;
+}
+
+.texto3 a:hover
+{
+  animation:1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #D5D20F,
+               0 0 70px  #D5D20F,
+               0 0 80px  #D5D20F,
+               0 0 100px #D5D20F,
+               0 0 150px #D5D20F;
+}
+
+.texto4 a 
+{
+  color: #E3A14D;
+  font-family: Vampiro One;
+}
+
+.texto4 a:hover
+{
+  animation:1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B5792C,
+               0 0 70px  #B5792C,
+               0 0 80px  #B5792C,
+               0 0 100px #B5792C,
+               0 0 150px #B5792C;
+}
+
+.texto5 a 
+{
+  color: #9B57D8;
+  font-family: Varela Round;
+}
+
+.texto5 a:hover
+{
+  animation:1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #5E2393,
+               0 0 70px  #5E2393,
+               0 0 80px  #5E2393,
+               0 0 100px #5E2393,
+               0 0 150px #5E2393;
+}
+
+
+.texto4
+{
+  font-size: 5rem;
+}
+
+.texto2
+{
+  font-size: 7rem;
+}
+
+.texto5
+{
+  font-size: 9rem;
+}
+
+.texto3
+{
+  font-size: 6rem;
+}
+
+
+/*Color del texto al pasar el ratón por encima*/
+p a:hover
+{
+  color: black;
+}
+ 
+/*Efecto psicodélico para el pié de página*/
+#pie
+{
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 30px Varela Round, sans-serif;
+  height: 50px;
+  /* HEIGT tamaño de altura*/
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  /* uppercase mayusculas*/
+  width: 100%;
+  animation: move ease-out 5500ms infinite;  
+  /* MOVE es un nombre inventado. luego (ABAJO) se añade para identificarlo (como si fuera una clase o id)*/
+}
+ 
+@keyframes move {
+  0% {
+    /* este 0% marcaria el inicio de la animación. si fuera 10%, empezaría más adelante.*/
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
